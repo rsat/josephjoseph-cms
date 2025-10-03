@@ -38,6 +38,18 @@
       "type": "string",
       "required": false
     },
+    "gallery": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": ["images"]
+    },
+    "videos": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": ["videos"]
+    },
     "gradient": {
       "type": "string",
       "required": true,
