@@ -3,4 +3,7 @@ export default ({ env }) => ({
     secret: env('ADMIN_JWT_SECRET'),
   },
   url: env('PUBLIC_URL') + '/admin',
+  rateLimit: {
+    enabled: false,
+  },
 });
