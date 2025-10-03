@@ -9,4 +9,14 @@ export default ({ env }) => ({
   cron: {
     enabled: env.bool('CRON_ENABLED', false),
   },
+  admin: {
+    auth: {
+      secret: env('ADMIN_JWT_SECRET'),
+    },
+  },
+  session: {
+    httpOnly: true,
+    secure: env('NODE_ENV', 'development') === 'production',
+    sameSite: 'lax',
+  },
 });
