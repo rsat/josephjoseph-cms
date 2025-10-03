@@ -16,7 +16,7 @@ export default ({ env }) => ({
   },
   session: {
     httpOnly: true,
-    secure: env('NODE_ENV', 'development') === 'production',
+    secure: false,
     sameSite: 'lax',
   },
 });
