@@ -50,6 +50,9 @@
       "required": false,
       "allowedTypes": ["videos"]
     },
+    "galleryUrls": {
+      "type": "json"
+    },
     "gradient": {
       "type": "string",
       "required": true,
